@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>Careerchannel</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">会社ロゴ</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="#about">カテゴリ1</a></li>
+          <li><a href="#contact">カテゴリ2</a></li>
+          <li><a href="#contact">カテゴリ3</a></li>
+          <form class="navbar-form navbar-left">
+           <div class="form-group">
+             <input type="text" class="form-control" placeholder="Search">
+           </div>
+           <button type="submit" class="btn btn-default">Submit</button>
+         </form>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/users">会員登録</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <div class="container theme-showcase">
+    <div class="row">
+      <div class="col-sm-9">
+        <%= yield %>
+      </div>
+      <div class="col-sm-3">
+        <h4 class="page-header">新着記事</h4>
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="/assets/business_man.jpg" alt="..." width="64" height="64">
+          </a>
+          <div class="media-body">
+            <h5 class="media-heading">スタートアップのピッチで高評価を得るためのコツ20選</h5>
+          </div>
+        </div><!-- media -->
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="/assets/business.jpg" alt="..." width="64" height="64">
+          </a>
+          <div class="media-body">
+            <h5 class="media-heading">スタートアップのピッチで高評価を得るためのコツ20選</h5>
+          </div>        
+        </div><!-- media -->
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="/assets/business_card.jpg" alt="..." width="64" height="64">
+          </a>
+          <div class="media-body">
+            <h5 class="media-heading">スタートアップのピッチで高評価を得るためのコツ20選</h5>
+          </div>
+        </div><!-- media -->
+        <h4 class="page-header">人気記事</h4>
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="/assets/business_man.jpg" alt="..." width="64" height="64">
+          </a>
+          <div class="media-body">
+            <h5 class="media-heading">スタートアップのピッチで高評価を得るためのコツ20選</h5>
+          </div>
+        </div><!-- media -->
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="/assets/business.jpg" alt="..." width="64" height="64">
+          </a>
+          <div class="media-body">
+            <h5 class="media-heading">スタートアップのピッチで高評価を得るためのコツ20選</h5>
+          </div>        
+        </div><!-- media -->
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="/assets/business_card.jpg" alt="..." width="64" height="64">
+          </a>
+          <div class="media-body">
+            <h5 class="h6 media-heading">スタートアップのピッチで高評価を得るためのコツ20選</h5>
+          </div>
+        </div><!-- media -->
+        <h4 class="page-header">カテゴリ</h4>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="badge">14</span>
+            新卒採用
+          </li>
+          <li class="list-group-item">
+            <span class="badge">2</span>
+            中途採用
+          </li>
+          <li class="list-group-item">
+            <span class="badge">1</span>
+            キャリアインタビュー
+          </li>
+        </ul>
+        <h4 class="page-header">月間アーカイブ</h4>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <nav class="footer-nav">
+          <span><a href="http://mercan.mercari.com/entry/about">mercan（メルカン）について</a></span>
+              <span><a href="https://www.mercari.com/jp/about/corporate/" target="_blank">お問い合わせ</a></span>
+              <span><a href="https://www.mercari.com/jp/about/corporate/" target="_blank">運営会社</a></span>
+              <span><a href="https://www.mercari.com/jp/" target="_blank">フリマアプリ「メルカリ」</a></span>
+        </nav>
+        <div class="footer-copyright">
+          © インキュベイトファンド
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
