@@ -55,6 +55,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # twitter bootstrap css & javascript toolkit
 gem 'twitter-bootswatch-rails'
-
-# twitter bootstrap helpers gem, e.g., alerts etc...
 gem 'twitter-bootswatch-rails-helpers'
+
+# ckeditor and carrierwave
+gem 'ckeditor'
+gem 'carrierwave'
+gem 'mini_magick'

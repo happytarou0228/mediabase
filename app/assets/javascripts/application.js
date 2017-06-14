@@ -13,3 +13,4 @@
 //= require rails-ujs
 //= require paper/loader
 //= require paper/bootswatch
+//= require ckeditor/init
