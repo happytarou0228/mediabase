@@ -12,9 +12,10 @@ class Kanri::ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     if @article.save
-      redirect_to kanri_articles_path, notice: "作成しました"
+      redirect_to kanri_articles_path, flash: { success: "更新しました" }
     else
-      render :new, laert: "作成できませんでした"
+      flash.now[:danger] = "作成できませんでした"
+      render :new
     end
   end
   
@@ -23,15 +24,16 @@ class Kanri::ArticlesController < ApplicationController
   
   def update
     if @article.update(article_params)
-      redirect_to kanri_articles_path, notice: "更新しました"
+      redirect_to kanri_articles_path, flash: { success: "更新しました" }
     else
-      render :new, alert: '更新できませんでした'
+      flash.now[:danger] = "更新できませんでした"
+      render :new
     end
   end
   
   def destroy
     @article.destroy
-    redirect_to kanri_articles_path, notice: "削除しました"
+    redirect_to kanri_articles_path, flash: { warning: "削除しました" }
   end
   
   private

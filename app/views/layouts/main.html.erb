@@ -36,6 +36,12 @@
       </div><!--/.nav-collapse -->
     </div>
   </div>
+	<% flash.each do |type, message| %>
+	<div class="alert <%= flash_class_for(type) %>" role="alert">
+	  <button class="close" data-dismiss="alert">×</button>
+	  <%= message %>
+	</div>
+	<% end %>
   <%= yield %>
  <footer>
    <div class="container">
