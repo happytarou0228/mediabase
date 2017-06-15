@@ -1,0 +1,2 @@
+module Kanri::ArticlesHelper
+end
