@@ -61,3 +61,6 @@ gem 'twitter-bootswatch-rails-helpers'
 gem 'ckeditor'
 gem 'carrierwave'
 gem 'mini_magick'
+
+# annotate
+gem 'annotate'
